@@ -1,38 +1,151 @@
-.App {
+.homeOuterWrap {
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-dark-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formWrap {
+  background: var(--bg-dark-secondary);
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.home-logo {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  background: #eee;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.btn-primary {
+  background: var(--primary);
+  transition: all 50ms ease-in-out;
+}
+
+.joinBtn {
+  background: var(--primary);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: bolder;
+  width: 30%;
+  align-self: flex-end;
+  transition: all 50ms ease-in-out;
+}
+
+.joinBtn:hover, .btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.new-room-info {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.new-room-link {
+  color: var(--primary);
+  cursor: pointer;
+  border-bottom: 2px solid var(--primary);
+  font-weight: bold;
+  transition: all 30ms ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.new-room-link:hover {
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--primary-dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer {
+  color: #eee;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 30ms all ease-in-out;
+}
+
+footer a:hover {
+  color: var(--primary-dark);
+}
+
+
+.editorPageOuterWrap {
+  display: flex;
+  height: 100vh;
+}
+
+.aside {
+  width: 20%;
+  background: var(--bg-dark-primary);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorWrap {
+  width: 80%;
+}
+
+.logo-wrapper {
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #424242;
+}
+
+.editor-page-logo {
+  width: 80%;
+}
+
+.clients-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.client-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CodeMirror {
+  min-height: calc(100vh);
+  font-size: 20px;
+  line-height: 1.6;
 }
