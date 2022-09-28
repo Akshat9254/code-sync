@@ -1,6 +1,7 @@
 {
   "name": "code-sync2",
   "version": "0.1.0",
+  "main": "server.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "start:front": "react-scripts start",
-    "start": "npm install && npm run build && npm run server:prod",
+    "start": "node server.js",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
     "build": "react-scripts build",
