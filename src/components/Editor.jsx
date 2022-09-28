@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react';
-import CodeMirror from 'codemirror';
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/mode/javascript/javascript.js';
-import 'codemirror/theme/dracula.css';
-import 'codemirror/addon/edit/closetag';
-import 'codemirror/addon/edit/closebrackets';
-import ACTIONS from '../Actions';
+import { useEffect, useRef } from "react";
+import CodeMirror from "codemirror";
+import "codemirror/lib/codemirror.css";
+import "codemirror/mode/javascript/javascript.js";
+import "codemirror/theme/dracula.css";
+import "codemirror/addon/edit/closetag";
+import "codemirror/addon/edit/closebrackets";
+import ACTIONS from "../Actions";
 
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
   const editorRef = useRef(null);
@@ -55,4 +55,4 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
   return <textarea id="realtimeEditor"></textarea>;
 };
 
-export default Editor
+export default Editor;
